@@ -244,7 +244,7 @@
         <a href="/introduction.html">Introduction</a>
 
         <!-- Replaced 'Practical Guides' with 'APP Manual' -->
-        <a href="{{ site.baseurl }}/portfolio">Manual</a>
+        <a href="{{ site.baseurl }}/portfolio">APP Manual</a>
 
         <!-- Replaced 'Creative Space' with 'Contributors' -->
         <a href="/about_me.html">Contributors</a>
@@ -255,22 +255,10 @@
     </div>
     <div class="content">
       <header>
-        <h1>{{ site.title | default: site.github.repository_name }}</h1>
-        <div class="underline"></div>
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
-        {% if site.github.is_user_page %}
-          <div class="github-link">
-            <a href="{{ site.github.owner_url }}" class="btn">View My GitHub Profile</a>
-          </div>
-        {% endif %}
-        <!-- Lines below GitHub Profile button -->
-        <div class="line-container">
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
+        <!-- Replaced "Nooshin Bahador" and "Welcome to My Website" with the image -->
+        <img src="{{ '/assets/img/Sample_UI_1.jpg' | relative_url }}" alt="Software UI" style="width: 100%; height: auto; border-radius: 15px;">
       </header>
       <section class="main-content">
-        <h2>Welcome to My Website</h2>
         <p>{{ content }}</p>
       </section>
       <footer>
