@@ -3,13 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube Video Embed</title>
+    <title>Demo of Neuro Dominance Tracker App</title>
+    <style>
+        /* Set dark background */
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+
+        /* Title with neon effect */
+        h1 {
+            font-size: 2.5em;
+            color: #00f5d4; /* Neon cyan */
+            text-shadow: 0 0 5px #00f5d4, 0 0 10px #00f5d4, 0 0 15px #00f5d4, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
+            margin-bottom: 20px;
+        }
+
+        /* Styled iframe container */
+        .video-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        iframe {
+            border: none;
+        }
+
+        /* Add a glowing effect to the iframe */
+        iframe:hover {
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.7), 0 0 40px rgba(0, 255, 255, 0.4);
+        }
+    </style>
 </head>
 <body>
-    <h1>Watch this YouTube Video</h1>
 
-    <!-- Embed YouTube video -->
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/M6GUMrdVJ6k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <h1>Watch the Demo of the Neuro Dominance Tracker App</h1>
+
+    <div class="video-container">
+        <!-- Embed YouTube video -->
+        <iframe width="800" height="450" src="https://www.youtube.com/embed/M6GUMrdVJ6k" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 </body>
 </html>
