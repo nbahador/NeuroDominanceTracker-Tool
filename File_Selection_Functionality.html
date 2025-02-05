@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Selection Functionality Supporting ABF, FIF, EDF, and BDF Formats</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .image-section {
+            display: flex;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images horizontally */
+            margin-bottom: 30px;
+        }
+        .image-container {
+            width: 80%; /* Adjust width to make images visible */
+            text-align: center;
+            margin-bottom: 20px; /* Add space between images */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .image-caption {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        .note {
+            background-color: #ecf0f1;
+            border-left: 4px solid #2980b9;
+            padding: 10px 15px;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>File Selection Functionality Supporting ABF, FIF, EDF, and BDF Formats</h1>
+
+        <div class="content">
+            <p>We enhanced the file selection functionality by allowing users to choose from commonly used file formats: ABF, FIF, EDF, and BDF. Users can now upload files in these formats for further analysis using the software.</p>
+            <p>The user must place the <strong>"fieldtrip-master"</strong> folder and the <strong>"abfload.m"</strong> script in the same directory as the NeuroDominanceTracker GUI executable for smooth functionality.</p>
+            <p>The FieldTrip toolbox used is an open-source software for advanced analysis of MEG, EEG, and invasive electrophysiological data, created by <a href="https://www.fieldtriptoolbox.org/" target="_blank">Robert Oostenveld, Pascal Fries, Eric Maris, and Jan-Mathijs Schoffelen</a>. You can find more details about it in their <a href="https://www.fieldtriptoolbox.org/" target="_blank">2011 publication</a>.</p>
+            <p>For example, a sample EDF file was uploaded and analyzed. The sampling frequency was 250 Hz, and the analysis revealed dominant theta episodes at 64.45 minutes, as shown in Figure 2.</p>
+        </div>
+
+        <div class="image-section">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/upload_sample_edf.jpg" alt="Uploading Sample EDF File">
+                <p class="image-caption">Figure 1: Uploading Sample EDF file</p>
+            </div>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/execution_sample_edf.jpg" alt="Execution of the Software on the Sample EDF File">
+                <p class="image-caption">Figure 2: Execution of the Software on the Sample EDF File</p>
+            </div>
+        </div>
+
+        <div class="note">
+            <p><strong>Note:</strong> The sample EDF file used for this analysis was obtained from <a href="https://zenodo.org/records/160118" target="_blank">Brown, L. A., Hasan, S., Foster, R. G., & Peirson, S. N. (2016). The raw EEG data, 4 files (EEG_A to D), in European data format (.edf) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.160118</a>.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
