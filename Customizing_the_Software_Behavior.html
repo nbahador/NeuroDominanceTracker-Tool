@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customizing the Software's Behavior</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #2980b9;
+            margin-bottom: 10px;
+        }
+        .content {
+            font-size: 16px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .content p {
+            margin-bottom: 20px;
+        }
+        .image-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        .image-container {
+            width: 30%;
+            text-align: center;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .image-caption {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-top: 10px;
+        }
+        .note {
+            background-color: #ecf0f1;
+            border-left: 4px solid #2980b9;
+            padding: 10px 15px;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #34495e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Customizing the Software's Behavior</h1>
+
+        <div class="content">
+            <p>The target audience for this software are individuals who have access to MATLAB and are comfortable using its editor. These users don't need to be coding experts, but they should be able to make basic adjustments within the code (i.e., changing values in the script).</p>
+            <p>Users are only required to modify certain predefined parameters in the MATLAB code (such as frequency bands, thresholds, and duration) in order to tailor the software's behavior to their specific experimental data. </p>
+            <p>The criteria that can be changed in this fashion are: frequency bands, thresholds, and duration.</p>
+            <p>We have visualized the locations in the MATLAB code where these changes would need to be done (Figures 1 to 3).</p>
+        </div>
+
+        <div class="image-section">
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/code_view.jpg" alt="Select the code view">
+                <p class="image-caption">Figure 1: Select the code view</p>
+            </div>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/adjust_values.jpg" alt="Adjust the parameter values">
+                <p class="image-caption">Figure 2: Adjust the parameter values</p>
+            </div>
+            <div class="image-container">
+                <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/save.jpg" alt="Select save">
+                <p class="image-caption">Figure 3: Select save</p>
+            </div>
+        </div>
+
+        <div class="note">
+            <p>Note: Ensure that you make changes to the predefined parameters only as outlined above to maintain the integrity of the software's function.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
