@@ -42,7 +42,7 @@
       display: flex;
       flex-direction: column;
       align-items: center; /* Center the items horizontally */
-      justify-content: center; /* Center the items vertically */
+      justify-content: flex-start; /* Start aligning the items from the top */
       border-radius: 15px 0 0 15px;
       box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
     }
@@ -168,15 +168,16 @@
       }
     }
 
-    /* New Title and Description Styles */
+    /* Title and Description Styles */
     .title-description {
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 20px; /* Add margin so it doesn't touch the links */
     }
 
     .title-description h1 {
-      font-size: 2.5em;
+      font-size: 1.8em;
       color: #fff;
+      margin-bottom: 10px; /* Add space below the title */
     }
 
     .title-description p {
@@ -193,17 +194,16 @@
 
   <div class="wrapper">
     <div class="sidebar">
-      <!-- Logo removed from sidebar, only links remain -->
+      <!-- Title and Description Section in Sidebar -->
+      <div class="title-description">
+        <h1>Neuro Dominance Tracker</h1>
+        <p>Analyzing the dominant rhythm in EEG/LFP recordings</p>
+      </div>
+
       <nav>
         <a href="/introduction.html">Introduction</a>
-
-        <!-- Replaced 'Practical Guides' with 'APP Manual' -->
         <a href="{{ site.baseurl }}/portfolio">APP Manual</a>
-
-        <!-- Replaced 'Creative Space' with 'Contributors' -->
         <a href="/about_me.html">Contributors</a>
-        
-        <!-- Replaced 'Contact' with 'Acknowledgment' -->
         <a href="/contact_me.html">Acknowledgment</a>
       </nav>      
     </div>
@@ -213,12 +213,6 @@
         <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/Sample_UI_1.jpg" alt="Software UI">
       </header>
       
-      <!-- Title and Description Section -->
-      <div class="title-description">
-        <h1>Neuro Dominance Tracker</h1>
-        <p>Analyzing the dominant rhythm in EEG/LFP recordings</p>
-      </div>
-
       <section class="main-content">
         <p>{{ content }}</p>
       </section>
