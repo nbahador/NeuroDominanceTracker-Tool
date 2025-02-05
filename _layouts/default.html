@@ -47,15 +47,6 @@
       box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
     }
 
-    .sidebar img {
-      width: 200px; /* Increased logo size */
-      height: 200px; /* Increased logo size */
-      border-radius: 50%;
-      margin-bottom: 20px;
-      border: 3px solid #fff;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    }
-
     .sidebar nav {
       width: 100%;
     }
@@ -90,47 +81,15 @@
     }
 
     header {
-      margin-bottom: 30px;
+      margin-bottom: 0; /* Remove extra space from the top */
       position: relative;
     }
 
-    header h1 {
-      font-size: 3em;
-      font-weight: bold;
-      color: #fff;
-      margin-bottom: 10px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-    }
-
-    header .underline {
-      position: absolute;
-      bottom: -10px;
-      left: 0;
-      width: 100%;
-      height: 4px;
-      background: linear-gradient(90deg, #ff007f, #00d4ff, #7a00ff, #ff007f);
-      background-size: 300%;
-      animation: move 3s linear infinite;
-      border-radius: 2px;
-    }
-
-    @keyframes move {
-      0% {
-        background-position: 0% 50%;
-      }
-      50% {
-        background-position: 100% 50%;
-      }
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    header p {
-      font-size: 1.2em;
-      color: #ccc;
-      margin-bottom: 20px;
+    header img {
+      width: 100%; /* Ensure image fits the width */
+      height: auto;
+      border-radius: 15px;
+      margin-top: 0; /* Remove any margin from the top */
     }
 
     .btn {
@@ -144,6 +103,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
       transition: all 0.3s ease-in-out;
       text-align: center; /* Ensure the button text is centered */
+      margin-top: 10px; /* Move button closer to the top edge of the image */
     }
 
     .btn:hover {
@@ -208,28 +168,6 @@
       }
     }
 
-    /* Additional Styling for lines below the GitHub link */
-    .github-link {
-      margin-bottom: 1cm; /* Adds 1cm space below the GitHub button */
-    }
-
-    .line-container {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2cm; /* Sets the distance between the two lines */
-    }
-
-    .line {
-      width: 100%;
-      height: 1px;
-      background-color: #fff; /* White lines */
-    }
-
-    /* Custom style to remove underline for 'About Me' */
-    .sidebar a.about-me-link {
-      text-decoration: none;
-      color: #fff;
-    }
   </style>
   {% include head-custom.html %}
 </head>
@@ -239,7 +177,7 @@
 
   <div class="wrapper">
     <div class="sidebar">
-      <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/logo.jpg" alt="Logo" style="width: 120px; height: auto; border-radius: 15px; display: block; margin: 0 auto;">
+      <!-- Logo removed from sidebar, only links remain -->
       <nav>
         <a href="/introduction.html">Introduction</a>
 
@@ -255,9 +193,11 @@
     </div>
     <div class="content">
       <header>
-        <!-- Replaced "Nooshin Bahador" and "Welcome to My Website" with the image -->
-        <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/Sample_UI_1.jpg" alt="Software UI" style="width: 100%; height: auto; border-radius: 15px;">
+        <!-- Image placed at the top of the content section -->
+        <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/Sample_UI_1.jpg" alt="Software UI">
         
+        <!-- Optional button below the image -->
+        <a href="#your-link" class="btn">Click Me</a>
       </header>
       <section class="main-content">
         <p>{{ content }}</p>
