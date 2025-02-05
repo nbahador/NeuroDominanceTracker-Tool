@@ -168,6 +168,22 @@
       }
     }
 
+    /* New Title and Description Styles */
+    .title-description {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .title-description h1 {
+      font-size: 2.5em;
+      color: #fff;
+    }
+
+    .title-description p {
+      font-size: 1.1em;
+      color: #ccc;
+    }
+
   </style>
   {% include head-custom.html %}
 </head>
@@ -195,10 +211,14 @@
       <header>
         <!-- Image placed at the top of the content section -->
         <img src="https://raw.githubusercontent.com/nbahador/NeuroDominanceTracker-Tool/main/assets/img/Sample_UI_1.jpg" alt="Software UI">
-        
-        <!-- Optional button below the image -->
-        <a href="#your-link" class="btn">Click Me</a>
       </header>
+      
+      <!-- Title and Description Section -->
+      <div class="title-description">
+        <h1>Neuro Dominance Tracker</h1>
+        <p>Analyzing the dominant rhythm in EEG/LFP recordings</p>
+      </div>
+
       <section class="main-content">
         <p>{{ content }}</p>
       </section>
