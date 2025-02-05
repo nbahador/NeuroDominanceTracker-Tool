@@ -36,13 +36,13 @@
     }
 
     .sidebar {
-      width: 300px;
+      width: 350px; /* Increase sidebar width to fit the title in one line */
       background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       padding: 30px 20px;
       display: flex;
       flex-direction: column;
-      align-items: center; /* Center the items horizontally */
-      justify-content: flex-start; /* Start aligning the items from the top */
+      align-items: center;
+      justify-content: flex-start;
       border-radius: 15px 0 0 15px;
       box-shadow: 4px 0 10px rgba(0, 0, 0, 0.3);
     }
@@ -53,7 +53,7 @@
 
     .sidebar a {
       display: block;
-      text-align: center; /* Center the text */
+      text-align: center;
       color: #fff;
       text-decoration: none;
       font-size: 1.1em;
@@ -176,9 +176,12 @@
     }
 
     .title-description h1 {
-      font-size: 1.8em;
+      font-size: 2.2em; /* Slightly larger size to ensure it stays in one line */
       color: #F9F300; /* Neon Lemon Yellow */
       margin-bottom: 10px;
+      white-space: nowrap; /* Ensure it stays on one line */
+      overflow: hidden;
+      text-overflow: ellipsis; /* Add ellipsis if it still overflows */
     }
 
     .title-description p {
