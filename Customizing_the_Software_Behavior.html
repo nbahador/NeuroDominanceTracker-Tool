@@ -41,12 +41,14 @@
         }
         .image-section {
             display: flex;
-            justify-content: space-between;
+            flex-direction: column; /* Stack images vertically */
+            align-items: center; /* Center images horizontally */
             margin-bottom: 30px;
         }
         .image-container {
-            width: 30%;
+            width: 80%; /* Adjust width to make images visible */
             text-align: center;
+            margin-bottom: 20px; /* Add space between images */
         }
         .image-container img {
             width: 100%;
