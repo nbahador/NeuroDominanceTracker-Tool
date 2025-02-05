@@ -20,6 +20,7 @@
             color: #333;
             line-height: 1.6;
             padding: 20px;
+            position: relative; /* Allows absolute positioning for the button */
         }
 
         /* Main container styling */
@@ -55,9 +56,10 @@
 
         /* Back Button Styling */
         .back-button {
-            display: inline-block;
+            position: absolute; /* Position it relative to the body */
+            left: 20px;  /* Distance from the left edge */
+            bottom: 20px; /* Distance from the bottom edge */
             padding: 10px 20px;
-            margin-top: 20px;
             font-size: 16px;
             color: #fff;
             background-color: #007bff;
@@ -114,9 +116,9 @@
             <p>If you use this tool in your research, please cite it as follows:</p>
             <p><strong>N. Bahador, S. Sengupta, J. Saha, M. Lankarany, L. Zhang, F. Skinner (2025). A Software for Identification and Characterization of Theta Rhythms in the Hippocampus.</strong></p>
         </div>
-
-        <!-- Back to Main Page Button -->
-        <a href="index.html" class="back-button">Back to Main Page</a>
     </div>
+
+    <!-- Back to Main Page Button -->
+    <a href="index.html" class="back-button">Back to Main Page</a>
 </body>
 </html>
