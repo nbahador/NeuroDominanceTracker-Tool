@@ -19,12 +19,20 @@
             flex-direction: column;
         }
 
-        /* Title with neon effect */
+        /* Title container with padding and distinct background */
+        .title-container {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Title with lemon yellow color */
         h1 {
             font-size: 2.5em;
-            color: #00f5d4; /* Neon cyan */
-            text-shadow: 0 0 5px #00f5d4, 0 0 10px #00f5d4, 0 0 15px #00f5d4, 0 0 20px #ff00ff, 0 0 30px #ff00ff;
-            margin-bottom: 20px;
+            color: #F7F700; /* Neon lemon yellow */
+            margin: 0;
         }
 
         /* Styled iframe container */
@@ -32,6 +40,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 255, 255, 0.5), 0 0 20px rgba(0, 255, 255, 0.3);
+            margin-top: 20px;
         }
 
         iframe {
@@ -46,7 +55,9 @@
 </head>
 <body>
 
-    <h1>Watch the Demo of the Neuro Dominance Tracker App</h1>
+    <div class="title-container">
+        <h1>Watch the Demo of the Neuro Dominance Tracker App</h1>
+    </div>
 
     <div class="video-container">
         <!-- Embed YouTube video -->
